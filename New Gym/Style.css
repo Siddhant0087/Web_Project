@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+#logo{
+    margin: 10px 34px;
+
+}
+#logo img{
+    height: 59px ;
+    margin: 3px 6px;
+
+}
+#navbar ul{
+    display: flex;
+    font-size: 1.3rem;
+    font-family: 'DynaPuff', cursive;
+    
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'DynaPuff', cursive;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+#home::before{
+    content:"";
+    position: absolute;
+    background: url(image/asparagus.jpg)no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'DynaPuff', cursive;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border:2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background: rgb(228, 179, 179);
+    
+}
+#services .box img{
+    width: 156px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+   font-family: 'DynaPuff', cursive;
+     
+}
+#client-section{
+    height:344px ;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client img{
+    height: 124px;
+
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'DynaPuff', cursive;
+}
+.h-secondary{
+    font-family: 'DynaPuff', cursive;
+    font-size: 2.3rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    font-size: 1.5rem;
+    margin: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.center{
+    text-align: center;
+}
